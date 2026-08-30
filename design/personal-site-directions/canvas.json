@@ -1,13 +1,16 @@
 {
   "artboards": [
-    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1440, "h": 1700 },
-    { "file": "Bold.dc.html", "x": 1560, "y": 0, "w": 1440, "h": 1650 },
-    { "file": "Playful.dc.html", "x": 3120, "y": 0, "w": 1440, "h": 1700 }
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1440, "h": 1700, "page": "page-1" },
+    { "file": "Editorial.dc.html", "x": 0, "y": 0, "w": 1440, "h": 1700, "page": "page-2" },
+    { "file": "Bold.dc.html", "x": 1560, "y": 0, "w": 1440, "h": 1650, "page": "page-2" }
   ],
   "annotations": [
-    { "id": "label-a", "x": 0, "y": -70, "w": 500, "text": "Varianta A — Minimalistický editorial" },
-    { "id": "label-b", "x": 1560, "y": -70, "w": 500, "text": "Varianta B — Tmavá & výrazná" },
-    { "id": "label-c", "x": 3120, "y": -70, "w": 500, "text": "Varianta C — Hravá & organická" }
+    { "id": "label-alt-1", "x": 0, "y": -70, "w": 500, "text": "Alternativa — Minimalistický editorial", "page": "page-2" },
+    { "id": "label-alt-2", "x": 1560, "y": -70, "w": 500, "text": "Alternativa — Tmavá & výrazná", "page": "page-2" }
   ],
-  "launch": { "view": "canvas" }
+  "pages": [
+    { "id": "page-1", "name": "Web" },
+    { "id": "page-2", "name": "Alternativy" }
+  ],
+  "launch": { "view": "canvas", "page": "page-1" }
 }

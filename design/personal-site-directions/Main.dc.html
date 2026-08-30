@@ -7,92 +7,75 @@
 <body>
 <x-dc>
 <helmet>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito+Sans:wght@400;600;700&display=swap">
   <style>
     body { margin: 0; }
     a { color: {{accent}}; text-decoration: none; }
-    a:hover { color: #1a1a1a; }
+    a:hover { color: #3a2a20; }
   </style>
 </helmet>
-<div style="width:1440px; min-height:1650px; background:oklch(98% 0.012 80); font-family:'Work Sans', system-ui, sans-serif; color:oklch(20% 0.01 80); box-sizing:border-box;">
+<div style="position:relative; width:1440px; min-height:1650px; background:oklch(96% 0.018 85); font-family:'Nunito Sans', system-ui, sans-serif; color:oklch(28% 0.02 70); box-sizing:border-box; overflow:hidden;">
 
-  <div style="display:flex; justify-content:space-between; align-items:center; padding:48px 96px;">
-    <div style="font-family:'Instrument Serif', serif; font-style:italic; font-size:26px;">J.N.</div>
-    <div style="display:flex; gap:40px; font-size:14px; letter-spacing:0.04em; text-transform:uppercase; color:oklch(45% 0.01 80);">
-      <a href="#">O mně</a>
-      <a href="#">Dovednosti</a>
-      <a href="#">Kontakt</a>
+  <svg style="position:absolute; top:-60px; right:-40px; opacity:0.5;" width="420" height="420" viewBox="0 0 240 240" fill="none">
+    <path d="M120,20 C180,10 230,60 220,120 C210,180 150,210 90,190 C30,170 10,110 40,60 C60,30 90,25 120,20 Z" fill="{{accent}}"/>
+  </svg>
+  <svg style="position:absolute; bottom:120px; left:-60px; opacity:0.35;" width="320" height="320" viewBox="0 0 240 240" fill="none">
+    <path d="M120,20 C180,10 230,60 220,120 C210,180 150,210 90,190 C30,170 10,110 40,60 C60,30 90,25 120,20 Z" fill="oklch(78% 0.12 190)"/>
+  </svg>
+
+  <div style="position:relative; display:flex; justify-content:space-between; align-items:center; padding:44px 96px;">
+    <div style="display:flex; align-items:center; gap:12px;">
+      <div style="width:40px; height:40px; border-radius:999px; background:{{accent}}; display:flex; align-items:center; justify-content:center; font-family:'Fredoka', sans-serif; font-weight:600; color:oklch(28% 0.02 70); font-size:16px;">LN</div>
+      <div style="font-family:'Fredoka', sans-serif; font-weight:600; font-size:18px;">Lukáš Novák</div>
+    </div>
+    <div style="display:flex; gap:12px;">
+      <a href="#" style="padding:10px 20px; border-radius:999px; background:oklch(100% 0 0 / 0.6); font-size:14px; font-weight:700;">O mně</a>
+      <a href="#" style="padding:10px 20px; border-radius:999px; background:oklch(100% 0 0 / 0.6); font-size:14px; font-weight:700;">Dovednosti</a>
+      <a href="#" style="padding:10px 20px; border-radius:999px; background:oklch(100% 0 0 / 0.6); font-size:14px; font-weight:700;">Kontakt</a>
     </div>
   </div>
 
-  <div style="display:flex; flex-direction:column; gap:28px; padding:24px 96px 96px; max-width:1000px;">
-    <div style="font-size:14px; letter-spacing:0.12em; text-transform:uppercase; color:{{accent}};">Ahoj, jmenuji se</div>
-    <h1 style="margin:0; font-family:'Instrument Serif', serif; font-weight:400; font-size:118px; line-height:1.03; letter-spacing:-0.01em;">[Jméno Příjmení]</h1>
-    <div style="font-size:26px; color:oklch(42% 0.01 80);">[Tvoje profese / obor]</div>
-    <p style="margin:0; max-width:620px; font-size:18px; line-height:1.65; color:oklch(38% 0.01 80);">[Krátký bio text – pár vět o tom, čím se zabýváš, jaký je tvůj přístup k práci a co tě na ní baví.]</p>
-    <div style="display:flex; align-items:center; gap:16px; margin-top:8px;">
-      <a href="#" style="display:flex; align-items:center; gap:10px; padding:14px 26px; background:oklch(20% 0.01 80); color:oklch(98% 0.01 80); font-size:15px; font-weight:500;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg>
-        Napsat e-mail
-      </a>
-      <a href="#" style="display:flex; align-items:center; gap:8px; padding:14px 22px; border:1px solid oklch(70% 0.01 80); font-size:15px; color:oklch(20% 0.01 80);">
-        LinkedIn
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M9 7h8v8"/></svg>
-      </a>
-      <a href="#" style="display:flex; align-items:center; gap:8px; padding:14px 22px; border:1px solid oklch(70% 0.01 80); font-size:15px; color:oklch(20% 0.01 80);">
-        GitHub
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M9 7h8v8"/></svg>
-      </a>
+  <div style="position:relative; display:flex; gap:56px; padding:48px 96px 88px; align-items:center;">
+    <div style="flex:1 1 58%; display:flex; flex-direction:column; gap:22px;">
+      <div style="display:inline-flex; align-items:center; gap:8px; width:fit-content; padding:8px 18px; border-radius:999px; background:oklch(78% 0.12 25 / 0.35); font-size:14px; font-weight:700;">👋 Ahoj, jsem</div>
+      <h1 style="margin:0; font-family:'Fredoka', sans-serif; font-weight:600; font-size:88px; line-height:1.05;">Lukáš<br>Novák</h1>
+      <div style="font-size:24px; font-weight:700; color:oklch(45% 0.03 70);">Programátor řídicích systémů</div>
+      <p style="margin:0; max-width:560px; font-size:18px; line-height:1.65; color:oklch(38% 0.02 70);">Programuji řídicí systémy pro průmyslovou automatizaci – od PLC po SCADA. Baví mě moderní technologie a výzvy, které s sebou nesou, ať už jde o nový protokol, chytřejší algoritmus, nebo problém, co nikdo nechce řešit.</p>
+      <div style="display:flex; gap:14px; margin-top:6px;">
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:16px 28px; border-radius:999px; background:{{accent}}; color:oklch(25% 0.02 70); font-weight:700; font-size:15px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          Napsat e-mail
+        </a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:16px 24px; border-radius:999px; background:oklch(100% 0 0 / 0.6); font-weight:700; font-size:15px; color:oklch(30% 0.02 70);">LinkedIn</a>
+        <a href="#" style="display:flex; align-items:center; gap:10px; padding:16px 24px; border-radius:999px; background:oklch(100% 0 0 / 0.6); font-weight:700; font-size:15px; color:oklch(30% 0.02 70);">GitHub</a>
+      </div>
+    </div>
+    <div style="flex:0 0 300px; display:flex; justify-content:center;">
+      <div style="width:280px; height:280px; border-radius:50%; background:oklch(100% 0 0 / 0.55); display:flex; align-items:center; justify-content:center; border:3px solid oklch(100% 0 0 / 0.8); overflow:hidden;">
+        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="oklch(45% 0.03 70)" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-6 8-6s8 2 8 6"/></svg>
+      </div>
     </div>
   </div>
 
-  <div style="height:1px; background:oklch(88% 0.01 80); margin:0 96px;"></div>
-
-  <div style="display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:32px; padding:80px 96px;">
-    <div style="display:flex; flex-direction:column; gap:14px; padding-bottom:24px; border-bottom:1px solid oklch(88% 0.01 80);">
-      <div style="font-family:'Instrument Serif', serif; font-size:20px; color:{{accent}};">01</div>
-      <div style="font-family:'Instrument Serif', serif; font-size:22px;">[Dovednost 1]</div>
-      <div style="font-size:14px; line-height:1.6; color:oklch(48% 0.01 80);">[Krátký popis této dovednosti nebo oblasti.]</div>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:14px; padding-bottom:24px; border-bottom:1px solid oklch(88% 0.01 80);">
-      <div style="font-family:'Instrument Serif', serif; font-size:20px; color:{{accent}};">02</div>
-      <div style="font-family:'Instrument Serif', serif; font-size:22px;">[Dovednost 2]</div>
-      <div style="font-size:14px; line-height:1.6; color:oklch(48% 0.01 80);">[Krátký popis této dovednosti nebo oblasti.]</div>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:14px; padding-bottom:24px; border-bottom:1px solid oklch(88% 0.01 80);">
-      <div style="font-family:'Instrument Serif', serif; font-size:20px; color:{{accent}};">03</div>
-      <div style="font-family:'Instrument Serif', serif; font-size:22px;">[Dovednost 3]</div>
-      <div style="font-size:14px; line-height:1.6; color:oklch(48% 0.01 80);">[Krátký popis této dovednosti nebo oblasti.]</div>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:14px; padding-bottom:24px; border-bottom:1px solid oklch(88% 0.01 80);">
-      <div style="font-family:'Instrument Serif', serif; font-size:20px; color:{{accent}};">04</div>
-      <div style="font-family:'Instrument Serif', serif; font-size:22px;">[Dovednost 4]</div>
-      <div style="font-size:14px; line-height:1.6; color:oklch(48% 0.01 80);">[Krátký popis této dovednosti nebo oblasti.]</div>
-    </div>
+  <div style="position:relative; display:flex; gap:16px; padding:8px 96px 88px; flex-wrap:wrap;">
+    <div style="padding:16px 26px; border-radius:999px; background:oklch(78% 0.12 25 / 0.4); font-weight:700; font-size:16px;">PLC &amp; SCADA programování</div>
+    <div style="padding:16px 26px; border-radius:999px; background:oklch(78% 0.12 190 / 0.4); font-weight:700; font-size:16px;">Automatizace procesů</div>
+    <div style="padding:16px 26px; border-radius:999px; background:oklch(78% 0.12 25 / 0.4); font-weight:700; font-size:16px;">Průmyslové sítě a protokoly</div>
+    <div style="padding:16px 26px; border-radius:999px; background:oklch(78% 0.12 190 / 0.4); font-weight:700; font-size:16px;">Diagnostika a ladění systémů</div>
   </div>
 
-  <div style="display:flex; justify-content:space-between; align-items:flex-end; padding:64px 96px 32px; border-top:1px solid oklch(88% 0.01 80); margin:0 96px;">
-    <div style="display:flex; flex-direction:column; gap:16px;">
-      <div style="font-family:'Instrument Serif', serif; font-size:38px;">Pojďme si promluvit.</div>
-      <a href="#" style="font-size:20px; border-bottom:1px solid {{accent}};">[email@example.cz]</a>
-    </div>
-    <div style="display:flex; gap:14px;">
-      <a href="#" style="display:flex; align-items:center; justify-content:center; width:44px; height:44px; border:1px solid oklch(70% 0.01 80); color:oklch(20% 0.01 80);">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg>
-      </a>
-      <a href="#" style="display:flex; align-items:center; justify-content:center; width:44px; height:44px; border:1px solid oklch(70% 0.01 80); color:oklch(20% 0.01 80);">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M9 7h8v8"/></svg>
-      </a>
-    </div>
+  <div style="position:relative; display:flex; flex-direction:column; align-items:center; gap:20px; margin:0 96px; padding:64px 48px; border-radius:40px; background:oklch(100% 0 0 / 0.5); text-align:center;">
+    <div style="font-family:'Fredoka', sans-serif; font-weight:600; font-size:40px;">Ozvi se mi!</div>
+    <a href="#" style="font-size:20px; font-weight:700; color:oklch(35% 0.03 70); border-bottom:2px solid {{accent}};">[email@example.cz]</a>
+    <div style="font-size:13px; color:oklch(50% 0.02 70); margin-top:8px;">© 2026 Lukáš Novák</div>
   </div>
-  <div style="padding:24px 96px 56px; font-size:13px; color:oklch(55% 0.01 80);">© [Rok] [Jméno Příjmení]</div>
 
 </div>
 </x-dc>
-<script data-dc-script data-props='{"accent":{"editor":"color","default":"#b5502f","options":["#b5502f","#8a5a34","#6b6f4c","#7a4a6b"]}}'>
+<script data-dc-script data-props='{"accent":{"editor":"color","default":"#f0a35e","options":["#f0a35e","#f4b8c4","#a0d9c9","#f7d774"]}}'>
 class Component extends DCLogic {
   renderVals() {
-    return { accent: this.props.accent ?? '#b5502f' };
+    return { accent: this.props.accent ?? '#f0a35e' };
   }
 }
 </script>

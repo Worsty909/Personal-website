@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@400;500;600&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: {{accent}}; text-decoration: none; }
+    a:hover { color: #1a1a1a; }
+  </style>
+</helmet>
+<div style="width:1440px; min-height:1650px; background:oklch(98% 0.012 80); font-family:'Work Sans', system-ui, sans-serif; color:oklch(20% 0.01 80); box-sizing:border-box;">
+
+  <div style="display:flex; justify-content:space-between; align-items:center; padding:48px 96px;">
+    <div style="font-family:'Instrument Serif', serif; font-style:italic; font-size:26px;">J.N.</div>
+    <div style="display:flex; gap:40px; font-size:14px; letter-spacing:0.04em; text-transform:uppercase; color:oklch(45% 0.01 80);">
+      <a href="#">O mně</a>
+      <a href="#">Dovednosti</a>
+      <a href="#">Kontakt</a>
+    </div>
+  </div>
+
+  <div style="display:flex; flex-direction:column; gap:28px; padding:24px 96px 96px; max-width:1000px;">
+    <div style="font-size:14px; letter-spacing:0.12em; text-transform:uppercase; color:{{accent}};">Ahoj, jmenuji se</div>
+    <h1 style="margin:0; font-family:'Instrument Serif', serif; font-weight:400; font-size:118px; line-height:1.03; letter-spacing:-0.01em;">[Jméno Příjmení]</h1>
+    <div style="font-size:26px; color:oklch(42% 0.01 80);">[Tvoje profese / obor]</div>
+    <p style="margin:0; max-width:620px; font-size:18px; line-height:1.65; color:oklch(38% 0.01 80);">[Krátký bio text – pár vět o tom, čím se zabýváš, jaký je tvůj přístup k práci a co tě na ní baví.]</p>
+    <div style="display:flex; align-items:center; gap:16px; margin-top:8px;">
+      <a href="#" style="display:flex; align-items:center; gap:10px; padding:14px 26px; background:oklch(20% 0.01 80); color:oklch(98% 0.01 80); font-size:15px; font-weight:500;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg>
+        Napsat e-mail
+      </a>
+      <a href="#" style="display:flex; align-items:center; gap:8px; padding:14px 22px; border:1px solid oklch(70% 0.01 80); font-size:15px; color:oklch(20% 0.01 80);">
+        LinkedIn
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+      <a href="#" style="display:flex; align-items:center; gap:8px; padding:14px 22px; border:1px solid oklch(70% 0.01 80); font-size:15px; color:oklch(20% 0.01 80);">
+        GitHub
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div style="height:1px; background:oklch(88% 0.01 80); margin:0 96px;"></div>
+
+  <div style="display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:32px; padding:80px 96px;">
+    <div style="display:flex; flex-direction:column; gap:14px; padding-bottom:24px; border-bottom:1px solid oklch(88% 0.01 80);">
+      <div style="font-family:'Instrument Serif', serif; font-size:20px; color:{{accent}};">01</div>
+      <div style="font-family:'Instrument Serif', serif; font-size:22px;">[Dovednost 1]</div>
+      <div style="font-size:14px; line-height:1.6; color:oklch(48% 0.01 80);">[Krátký popis této dovednosti nebo oblasti.]</div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:14px; padding-bottom:24px; border-bottom:1px solid oklch(88% 0.01 80);">
+      <div style="font-family:'Instrument Serif', serif; font-size:20px; color:{{accent}};">02</div>
+      <div style="font-family:'Instrument Serif', serif; font-size:22px;">[Dovednost 2]</div>
+      <div style="font-size:14px; line-height:1.6; color:oklch(48% 0.01 80);">[Krátký popis této dovednosti nebo oblasti.]</div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:14px; padding-bottom:24px; border-bottom:1px solid oklch(88% 0.01 80);">
+      <div style="font-family:'Instrument Serif', serif; font-size:20px; color:{{accent}};">03</div>
+      <div style="font-family:'Instrument Serif', serif; font-size:22px;">[Dovednost 3]</div>
+      <div style="font-size:14px; line-height:1.6; color:oklch(48% 0.01 80);">[Krátký popis této dovednosti nebo oblasti.]</div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:14px; padding-bottom:24px; border-bottom:1px solid oklch(88% 0.01 80);">
+      <div style="font-family:'Instrument Serif', serif; font-size:20px; color:{{accent}};">04</div>
+      <div style="font-family:'Instrument Serif', serif; font-size:22px;">[Dovednost 4]</div>
+      <div style="font-size:14px; line-height:1.6; color:oklch(48% 0.01 80);">[Krátký popis této dovednosti nebo oblasti.]</div>
+    </div>
+  </div>
+
+  <div style="display:flex; justify-content:space-between; align-items:flex-end; padding:64px 96px 32px; border-top:1px solid oklch(88% 0.01 80); margin:0 96px;">
+    <div style="display:flex; flex-direction:column; gap:16px;">
+      <div style="font-family:'Instrument Serif', serif; font-size:38px;">Pojďme si promluvit.</div>
+      <a href="#" style="font-size:20px; border-bottom:1px solid {{accent}};">[email@example.cz]</a>
+    </div>
+    <div style="display:flex; gap:14px;">
+      <a href="#" style="display:flex; align-items:center; justify-content:center; width:44px; height:44px; border:1px solid oklch(70% 0.01 80); color:oklch(20% 0.01 80);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg>
+      </a>
+      <a href="#" style="display:flex; align-items:center; justify-content:center; width:44px; height:44px; border:1px solid oklch(70% 0.01 80); color:oklch(20% 0.01 80);">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+    </div>
+  </div>
+  <div style="padding:24px 96px 56px; font-size:13px; color:oklch(55% 0.01 80);">© [Rok] [Jméno Příjmení]</div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"accent":{"editor":"color","default":"#b5502f","options":["#b5502f","#8a5a34","#6b6f4c","#7a4a6b"]}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#b5502f' };
+  }
+}
+</script>
+</body>
+</html>

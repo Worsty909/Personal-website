@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: {{accent}}; text-decoration: none; }
+    a:hover { color: #ffffff; }
+  </style>
+</helmet>
+<div style="width:1440px; min-height:1600px; background:oklch(14% 0.02 260); font-family:'Space Grotesk', system-ui, sans-serif; color:oklch(95% 0.01 260); box-sizing:border-box; overflow:hidden;">
+
+  <div style="display:flex; justify-content:space-between; align-items:center; padding:44px 88px; font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.05em; color:oklch(65% 0.02 260);">
+    <div>// PORTFOLIO_2026</div>
+    <div style="display:flex; gap:32px; text-transform:uppercase;">
+      <a href="#" style="color:oklch(95% 0.01 260);">O mně</a>
+      <a href="#" style="color:oklch(95% 0.01 260);">Dovednosti</a>
+      <a href="#" style="color:oklch(95% 0.01 260);">Kontakt</a>
+    </div>
+  </div>
+
+  <div style="display:flex; gap:48px; padding:40px 88px 64px; align-items:flex-start;">
+    <div style="flex:1 1 62%; transform:rotate(-1.5deg); transform-origin:left top;">
+      <h1 style="margin:0; font-size:132px; font-weight:700; line-height:0.92; text-transform:uppercase; letter-spacing:-0.02em;">[Jméno<br>Příjmení]</h1>
+      <div style="margin-top:24px; font-family:'JetBrains Mono', monospace; font-size:20px; color:{{accent}};">[ [TVOJE PROFESE / OBOR] ]</div>
+    </div>
+    <div style="flex:1 1 38%; display:flex; flex-direction:column; gap:24px; border:1px solid oklch(30% 0.02 260); padding:32px; margin-top:12px;">
+      <div style="font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:oklch(60% 0.02 260);">O mně</div>
+      <p style="margin:0; font-size:17px; line-height:1.6; color:oklch(85% 0.01 260);">[Krátký bio text – pár vět o tom, čím se zabýváš, jaký je tvůj přístup k práci a co tě na ní baví.]</p>
+      <div style="display:flex; flex-direction:column; gap:12px; margin-top:8px;">
+        <a href="#" style="display:flex; align-items:center; justify-content:space-between; padding:16px 20px; background:{{accent}}; color:oklch(14% 0.02 260); font-weight:500; font-size:15px;">
+          Napsat e-mail
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+        <a href="#" style="display:flex; align-items:center; justify-content:space-between; padding:16px 20px; border:1px solid oklch(40% 0.02 260); font-size:15px;">
+          LinkedIn
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+        <a href="#" style="display:flex; align-items:center; justify-content:space-between; padding:16px 20px; border:1px solid oklch(40% 0.02 260); font-size:15px;">
+          GitHub
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex; align-items:center; gap:20px; padding:32px 88px; border-top:1px solid oklch(28% 0.02 260); border-bottom:1px solid oklch(28% 0.02 260); font-family:'JetBrains Mono', monospace; font-size:15px; flex-wrap:wrap;">
+    <span style="color:{{accent}};">[DOVEDNOST_01]</span>
+    <span style="color:oklch(40% 0.02 260);">/</span>
+    <span style="color:oklch(90% 0.19 20);">[DOVEDNOST_02]</span>
+    <span style="color:oklch(40% 0.02 260);">/</span>
+    <span style="color:{{accent}};">[DOVEDNOST_03]</span>
+    <span style="color:oklch(40% 0.02 260);">/</span>
+    <span style="color:oklch(90% 0.19 20);">[DOVEDNOST_04]</span>
+  </div>
+
+  <div style="display:flex; justify-content:space-between; align-items:flex-end; padding:80px 88px 40px;">
+    <a href="#" style="font-size:56px; font-weight:700; text-transform:uppercase; letter-spacing:-0.01em; border-bottom:3px solid {{accent}};">Napsat →</a>
+    <div style="display:flex; flex-direction:column; align-items:flex-end; gap:8px; font-family:'JetBrains Mono', monospace; font-size:13px; color:oklch(60% 0.02 260);">
+      <div>[email@example.cz]</div>
+      <div>© [Rok] [Jméno Příjmení]</div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"accent":{"editor":"color","default":"#c8f169","options":["#c8f169","#7de0d3","#f2c94c","#9be564"]}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#c8f169' };
+  }
+}
+</script>
+</body>
+</html>

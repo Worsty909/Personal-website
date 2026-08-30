@@ -1,0 +1,13 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1440, "h": 1700 },
+    { "file": "Bold.dc.html", "x": 1560, "y": 0, "w": 1440, "h": 1650 },
+    { "file": "Playful.dc.html", "x": 3120, "y": 0, "w": 1440, "h": 1700 }
+  ],
+  "annotations": [
+    { "id": "label-a", "x": 0, "y": -70, "w": 500, "text": "Varianta A — Minimalistický editorial" },
+    { "id": "label-b", "x": 1560, "y": -70, "w": 500, "text": "Varianta B — Tmavá & výrazná" },
+    { "id": "label-c", "x": 3120, "y": -70, "w": 500, "text": "Varianta C — Hravá & organická" }
+  ],
+  "launch": { "view": "canvas" }
+}
